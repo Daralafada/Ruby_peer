@@ -1,10 +1,12 @@
-puts " Salut, bienvenue dans ma pyramide, combien d'etages veux tu"
-print ">"
-nb_etage=gets.to_i 
-puts " et voici la pyramide"
-i=1
-while i<=nb_etage do
-
-  puts"#{"#"*i}" 
-  i+=1
-end
+puts "nombre étage"
+number = gets.chomp.to_i
+i = 1
+puts "pyramide"
+number.times do 
+    if number <=25 || number > 0
+     puts "#{"#"*i}"
+    else 
+     puts "Choisissez entre 1 et 25"
+    end 
+    i = i+1
+end 
